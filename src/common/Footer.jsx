@@ -31,7 +31,7 @@ function Footer() {
                       <div className="footer-right">
                         <div className="footer-right-nav">
                             <div className="row">
-                                <div className="col-lg-4">
+                                <div className="col-sm-4 col-lg-4">
                                     <div className="footer-nav-single">
                                         <h2>customer care</h2>
                                         <ul>
@@ -44,7 +44,7 @@ function Footer() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-sm-4 col-lg-4">
                                     <div className="footer-nav-single">
                                         <h2>about us</h2>
                                         <ul>
@@ -54,7 +54,7 @@ function Footer() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col-sm-4 col-lg-4">
                                     <div className="footer-nav-single">
                                         <h2>MY ACCOUNT</h2>
                                         <ul>

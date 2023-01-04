@@ -1,4 +1,6 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../node_modules/slick-carousel/slick/slick.css';
+import '../src/css/font-awesome.min.css';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './pages/Home';
