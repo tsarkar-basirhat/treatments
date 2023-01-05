@@ -3,7 +3,7 @@ import { ImStarEmpty, ImStarHalf, ImStarFull } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { GiRotaryPhone } from "react-icons/gi";
 import { BsCart3 } from "react-icons/bs";
-import {Form, Link} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
 
@@ -62,11 +62,11 @@ function Header() {
                     </div>
                     <div className="site-nav">
                         <ul>
-                            <li><a className="active" href="">HOME</a></li>
-                            <li><a href="">Treatments</a></li>
-                            <li><a href="">Products</a></li>
-                            <li><a href="">Contact us</a></li>
-                            <li><a href="">FAQ</a></li>
+                            <li><NavLink to="/">HOME</NavLink> </li>
+                            <li><NavLink to="/treatment">Treatments</NavLink></li>
+                            <li><NavLink to="/products">Products</NavLink></li>
+                            <li><NavLink to="/contact">Contact us</NavLink></li>
+                            <li><NavLink to="/faq">FAQ</NavLink></li>
                         </ul>
                     </div>
 

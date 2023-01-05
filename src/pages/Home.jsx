@@ -1,4 +1,6 @@
 import React from "react";
+
+import TitleBar from "../component/TitleBar";
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 import HomeSlider from "../component/HomeSlider";
@@ -40,7 +42,7 @@ function Home() {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 1.3,
         }
       },
       {
@@ -63,7 +65,7 @@ function Home() {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 1.3,
         }
       },
       {
@@ -77,6 +79,7 @@ function Home() {
 
     return(
         <>
+          <TitleBar title="Home" />
           <Header></Header>
 
           <HomeSlider></HomeSlider>
@@ -179,7 +182,7 @@ function Home() {
                             <p>We can offer your treatments at your house. Just look for the treatment you wish and book your favourite day and hour to get it done. </p>
                             <h4>Note!</h4>
                             <p>The treatmts at your house tent to be more expensive then in the clinic. For <strong>traveling outside of London</strong> will be <strong>additional charges</strong> in top of the treatment/s price.</p>  
-                            <div className="trtLink"><a className="themeBtn mt-4" href="">check Treatments</a></div>  
+                            <div className="trtLink"><a className="themeBtn mt-4" href="#">check Treatments</a></div>  
                           </div>
                         </div>
                       </div>
@@ -197,7 +200,7 @@ function Home() {
                             <p>We can offer your treatments at your house. Just look for the treatment you wish and book your favourite day and hour to get it done. </p>
                             <h4>Note!</h4>
                             <p>The treatmts at your house tent to be more expensive then in the clinic. For <strong>traveling outside of London</strong> will be <strong>additional charges</strong> in top of the treatment/s price.</p>  
-                            <div className="trtLink"><a className="themeBtn mt-4" href="">check Treatments</a></div>  
+                            <div className="trtLink"><a className="themeBtn mt-4" href="#">check Treatments</a></div>  
                           </div>
                         </div>
                       </div>
@@ -215,7 +218,7 @@ function Home() {
                             <p>We can offer your treatments at your house. Just look for the treatment you wish and book your favourite day and hour to get it done. </p>
                             <h4>Note!</h4>
                             <p>The treatmts at your house tent to be more expensive then in the clinic. For <strong>traveling outside of London</strong> will be <strong>additional charges</strong> in top of the treatment/s price.</p>  
-                            <div className="trtLink"><a className="themeBtn mt-4" href="">check Treatments</a></div>  
+                            <div className="trtLink"><a className="themeBtn mt-4" href="#">check Treatments</a></div>  
                           </div>
                         </div>
                       </div>
@@ -260,7 +263,7 @@ function Home() {
                                   <span><ImStarFull/></span>
                                   <span>4.5/5</span>
                               </div>
-                              <a className="themeBtn" href="">Add to Cart</a>
+                              <a className="themeBtn" href="#">Add to Cart</a>
                             </div>
                             <div className="pro-bottom-right">
                               <div className="price">$1,799.99</div>
@@ -284,7 +287,7 @@ function Home() {
                                   <span><ImStarFull/></span>
                                   <span>4.5/5</span>
                               </div>
-                              <a className="themeBtn" href="">Add to Cart</a>
+                              <a className="themeBtn" href="#">Add to Cart</a>
                             </div>
                             <div className="pro-bottom-right">
                               <div className="price">$1,799.99</div>
@@ -308,7 +311,7 @@ function Home() {
                                   <span><ImStarFull/></span>
                                   <span>4.5/5</span>
                               </div>
-                              <a className="themeBtn" href="">Add to Cart</a>
+                              <a className="themeBtn" href="#">Add to Cart</a>
                             </div>
                             <div className="pro-bottom-right">
                               <div className="price">$1,799.99</div>
@@ -332,7 +335,7 @@ function Home() {
                                   <span><ImStarFull/></span>
                                   <span>4.5/5</span>
                               </div>
-                              <a className="themeBtn" href="">Add to Cart</a>
+                              <a className="themeBtn" href="#">Add to Cart</a>
                             </div>
                             <div className="pro-bottom-right">
                               <div className="price">$1,799.99</div>
@@ -360,7 +363,7 @@ function Home() {
                                   <span><ImStarFull/></span>
                                   <span>4.5/5</span>
                               </div>
-                              <a className="themeBtn" href="">Add to Cart</a>
+                              <a className="themeBtn" href="#">Add to Cart</a>
                             </div>
                             <div className="pro-bottom-right">
                               <div className="price">$1,799.99</div>
@@ -384,7 +387,7 @@ function Home() {
                                   <span><ImStarFull/></span>
                                   <span>4.5/5</span>
                               </div>
-                              <a className="themeBtn" href="">Add to Cart</a>
+                              <a className="themeBtn" href="#">Add to Cart</a>
                             </div>
                             <div className="pro-bottom-right">
                               <div className="price">$1,799.99</div>
@@ -408,7 +411,7 @@ function Home() {
                                   <span><ImStarFull/></span>
                                   <span>4.5/5</span>
                               </div>
-                              <a className="themeBtn" href="">Add to Cart</a>
+                              <a className="themeBtn" href="#">Add to Cart</a>
                             </div>
                             <div className="pro-bottom-right">
                               <div className="price">$1,799.99</div>
@@ -432,7 +435,7 @@ function Home() {
                                   <span><ImStarFull/></span>
                                   <span>4.5/5</span>
                               </div>
-                              <a className="themeBtn" href="">Add to Cart</a>
+                              <a className="themeBtn" href="#">Add to Cart</a>
                             </div>
                             <div className="pro-bottom-right">
                               <div className="price">$1,799.99</div>
@@ -467,7 +470,7 @@ function Home() {
                     </div>
                   <p>These is the best product I bought so far! I love how they grab color too. So excited about this products!</p>
                   <div className="revBtn">
-                    <a className="themeBtn dark" href="">Visit Product</a>
+                    <a className="themeBtn dark" href="#">Visit Product</a>
                   </div>
                 </div>
               </div>
@@ -487,7 +490,7 @@ function Home() {
                     </div>
                   <p>These is the best product I bought so far! I love how they grab color too. So excited about this products!</p>
                   <div className="revBtn">
-                    <a className="themeBtn" href="">Visit Treatment</a>
+                    <a className="themeBtn" href="#">Visit Treatment</a>
                   </div>
                 </div>
               </div>
@@ -507,13 +510,13 @@ function Home() {
                     </div>
                   <p>These is the best product I bought so far! I love how they grab color too. So excited about this products!</p>
                   <div className="revBtn">
-                    <a className="themeBtn dark" href="">Visit Product</a>
+                    <a className="themeBtn dark" href="#">Visit Product</a>
                   </div>
                 </div>
               </div>
 
               <div className="review-load">
-                <a className="themeBtn" href="">Load more comments</a>
+                <a className="themeBtn" href="#">Load more comments</a>
               </div>
 
             </div>
