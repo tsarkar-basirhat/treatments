@@ -11,7 +11,7 @@ function ContactUs() {
 
     return(
         <>
-          <TitleBar title="Product" />
+          <TitleBar title="Contact Us" />
           <Header></Header>
           <ContactSlider></ContactSlider>
 

@@ -7,6 +7,10 @@ import Home from './pages/Home';
 import Treatment from './pages/Treatment';
 import Product from './pages/Product';
 import ContactUs from './pages/ContactUs';
+import Faq from './pages/Faq';
+import Discounts from './pages/Discounts';
+import Career from './pages/Career';
+import About from './pages/About';
 
 function App() {
   return (
@@ -19,6 +23,11 @@ function App() {
             <Route path="/treatment" element={<Treatment />} />
             <Route path="/products" element={<Product />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/faq" element={<Faq />} />
+
+            <Route path="/discounts" element={<Discounts />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/about" element={<About />} />
         </Routes>
       </Router>
     </div>

@@ -16,6 +16,7 @@ function Header() {
         <>
           <header className="site-header">
               <div className="container">
+                <div className="header-wrap">
                   <div className="header-main">
                       <div className="logo-sm"><img src={require('../images/logo-sm.svg').default} /></div>
                       <div className="header-ratings">
@@ -49,6 +50,7 @@ function Header() {
                   </div>
                   <div className={isActive ? 'header-nav act': 'header-nav'}>
                     <div className="logo"><img src={require('../images/logo.svg').default} /></div>
+                    <div className="logo-dark"><img src={require('../images/logo-dark.svg').default} /></div>
                     <div className="header-ratings">
                         <img alt="" src={require('../images/google.png')} />
                         <div className="star">
@@ -87,6 +89,7 @@ function Header() {
                       <div className="header-copy">© AZ TREATMENTS 2022</div>
                     </div>
                   </div>
+                </div>
               </div>
           </header>
         </>
