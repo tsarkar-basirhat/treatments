@@ -5,8 +5,10 @@ import Header from "../common/Header";
 import Footer from "../common/Footer";
 import HomeSlider from "../component/HomeSlider";
 
-import { ImStarEmpty, ImStarHalf, ImStarFull } from "react-icons/im";
-import { BsCheckCircleFill } from "react-icons/bs"
+import MostPopularProducts from "../component/MostPopularProducts";
+import NewArrivalProducts from "../component/NewArrivalProducts";
+
+import CustomerReviews from "../component/CustomerReviews";
 
 import Slider from "react-slick";
 import Nav from 'react-bootstrap/Nav';
@@ -27,52 +29,6 @@ function Home() {
       {
         breakpoint: 1023,
         settings: "unslick"
-      }
-    ]
-  };
-
-  var newArrivals = {
-    dots: false,
-    arrows: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 2.8,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1.3,
-        }
-      },
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 2,
-        }
-      }
-    ]
-  };
-
-  var popular = {
-    dots: false,
-    arrows: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 2.8,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1.3,
-        }
-      },
-      {
-        breakpoint: 1023,
-        settings: {
-          slidesToShow: 2,
-        }
       }
     ]
   };
@@ -246,204 +202,10 @@ function Home() {
                  </div>
                   <Tab.Content>
                     <Tab.Pane eventKey="tab-1">
-                      <Slider className="" {...newArrivals}>
-                        <div className="product-single">
-                          <div className="product-thumb">
-                            <img alt="" src={require('../images/pro.png')} />
-                          </div>
-                          <h3>BIO WATERY SUN CREAM</h3>
-                          <h6>SPF50+ PA++++ - P</h6>
-                          <div className="pro-bottom">
-                            <div className="pro-bottom-left">
-                              <div className="pro-ratings">
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span>4.5/5</span>
-                              </div>
-                              <a className="themeBtn" href="#">Add to Cart</a>
-                            </div>
-                            <div className="pro-bottom-right">
-                              <div className="price">$1,799.99</div>
-                              <div className="discounted-price">$1,149.99</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="product-single">
-                          <div className="product-thumb">
-                            <img alt="" src={require('../images/pro.png')} />
-                          </div>
-                          <h3>BIO WATERY SUN CREAM</h3>
-                          <h6>SPF50+ PA++++ - P</h6>
-                          <div className="pro-bottom">
-                            <div className="pro-bottom-left">
-                              <div className="pro-ratings">
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span>4.5/5</span>
-                              </div>
-                              <a className="themeBtn" href="#">Add to Cart</a>
-                            </div>
-                            <div className="pro-bottom-right">
-                              <div className="price">$1,799.99</div>
-                              <div className="discounted-price">$1,149.99</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="product-single">
-                          <div className="product-thumb">
-                            <img alt="" src={require('../images/pro.png')} />
-                          </div>
-                          <h3>BIO WATERY SUN CREAM</h3>
-                          <h6>SPF50+ PA++++ - P</h6>
-                          <div className="pro-bottom">
-                            <div className="pro-bottom-left">
-                              <div className="pro-ratings">
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span>4.5/5</span>
-                              </div>
-                              <a className="themeBtn" href="#">Add to Cart</a>
-                            </div>
-                            <div className="pro-bottom-right">
-                              <div className="price">$1,799.99</div>
-                              <div className="discounted-price">$1,149.99</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="product-single">
-                          <div className="product-thumb">
-                            <img alt="" src={require('../images/pro.png')} />
-                          </div>
-                          <h3>BIO WATERY SUN CREAM</h3>
-                          <h6>SPF50+ PA++++ - P</h6>
-                          <div className="pro-bottom">
-                            <div className="pro-bottom-left">
-                              <div className="pro-ratings">
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span>4.5/5</span>
-                              </div>
-                              <a className="themeBtn" href="#">Add to Cart</a>
-                            </div>
-                            <div className="pro-bottom-right">
-                              <div className="price">$1,799.99</div>
-                              <div className="discounted-price">$1,149.99</div>
-                            </div>
-                          </div>
-                        </div>
-                      </Slider>
+                      <NewArrivalProducts></NewArrivalProducts>
                     </Tab.Pane>
                     <Tab.Pane eventKey="tab-2">
-                      <Slider className="" {...popular}>
-                      <div className="product-single">
-                          <div className="product-thumb">
-                            <img alt="" src={require('../images/pro.png')} />
-                          </div>
-                          <h3>BIO WATERY SUN CREAM</h3>
-                          <h6>SPF50+ PA++++ - P</h6>
-                          <div className="pro-bottom">
-                            <div className="pro-bottom-left">
-                              <div className="pro-ratings">
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span>4.5/5</span>
-                              </div>
-                              <a className="themeBtn" href="#">Add to Cart</a>
-                            </div>
-                            <div className="pro-bottom-right">
-                              <div className="price">$1,799.99</div>
-                              <div className="discounted-price">$1,149.99</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="product-single">
-                          <div className="product-thumb">
-                            <img alt="" src={require('../images/pro.png')} />
-                          </div>
-                          <h3>BIO WATERY SUN CREAM</h3>
-                          <h6>SPF50+ PA++++ - P</h6>
-                          <div className="pro-bottom">
-                            <div className="pro-bottom-left">
-                              <div className="pro-ratings">
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span>4.5/5</span>
-                              </div>
-                              <a className="themeBtn" href="#">Add to Cart</a>
-                            </div>
-                            <div className="pro-bottom-right">
-                              <div className="price">$1,799.99</div>
-                              <div className="discounted-price">$1,149.99</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="product-single">
-                          <div className="product-thumb">
-                            <img alt="" src={require('../images/pro.png')} />
-                          </div>
-                          <h3>BIO WATERY SUN CREAM</h3>
-                          <h6>SPF50+ PA++++ - P</h6>
-                          <div className="pro-bottom">
-                            <div className="pro-bottom-left">
-                              <div className="pro-ratings">
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span>4.5/5</span>
-                              </div>
-                              <a className="themeBtn" href="#">Add to Cart</a>
-                            </div>
-                            <div className="pro-bottom-right">
-                              <div className="price">$1,799.99</div>
-                              <div className="discounted-price">$1,149.99</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="product-single">
-                          <div className="product-thumb">
-                            <img alt="" src={require('../images/pro.png')} />
-                          </div>
-                          <h3>BIO WATERY SUN CREAM</h3>
-                          <h6>SPF50+ PA++++ - P</h6>
-                          <div className="pro-bottom">
-                            <div className="pro-bottom-left">
-                              <div className="pro-ratings">
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span><ImStarFull/></span>
-                                  <span>4.5/5</span>
-                              </div>
-                              <a className="themeBtn" href="#">Add to Cart</a>
-                            </div>
-                            <div className="pro-bottom-right">
-                              <div className="price">$1,799.99</div>
-                              <div className="discounted-price">$1,149.99</div>
-                            </div>
-                          </div>
-                        </div>
-                      </Slider>
+                        <MostPopularProducts></MostPopularProducts>
                     </Tab.Pane>
                   </Tab.Content>
             </Tab.Container>
@@ -454,71 +216,10 @@ function Home() {
           <section className="reviews">
             <div className="container">
               <h2 className="title">Customers reviews</h2>
-              <div className="reviews-single">
-                <div className="reviews-left"><img alt="" src={require('../images/review.png')} /></div>
-                <div className="reviews-right">
-                  <div className="revTime">1 h ago</div>
-                  <h2>Jessica L.</h2>
-                  <div className="verified-buyer"><BsCheckCircleFill/> Verified Buyer</div>
-                    <div className="pro-ratings mt-3">
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span>4.5/5</span>
-                    </div>
-                  <p>These is the best product I bought so far! I love how they grab color too. So excited about this products!</p>
-                  <div className="revBtn">
-                    <a className="themeBtn dark" href="#">Visit Product</a>
-                  </div>
-                </div>
-              </div>
-              <div className="reviews-single">
-                <div className="reviews-left"><img alt="" src={require('../images/review.png')} /></div>
-                <div className="reviews-right">
-                  <div className="revTime">3 h ago</div>
-                  <h2>Jessica L.</h2>
-                  <div className="verified-buyer"><BsCheckCircleFill/> Verified Buyer</div>
-                    <div className="pro-ratings mt-3">
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span>4.5/5</span>
-                    </div>
-                  <p>These is the best product I bought so far! I love how they grab color too. So excited about this products!</p>
-                  <div className="revBtn">
-                    <a className="themeBtn" href="#">Visit Treatment</a>
-                  </div>
-                </div>
-              </div>
-              <div className="reviews-single">
-                <div className="reviews-left"><img alt="" src={require('../images/review.png')} /></div>
-                <div className="reviews-right">
-                  <div className="revTime">5 h ago</div>
-                  <h2>Jessica L.</h2>
-                  <div className="verified-buyer"><BsCheckCircleFill/> Verified Buyer</div>
-                    <div className="pro-ratings mt-3">
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span><ImStarFull/></span>
-                        <span>4.5/5</span>
-                    </div>
-                  <p>These is the best product I bought so far! I love how they grab color too. So excited about this products!</p>
-                  <div className="revBtn">
-                    <a className="themeBtn dark" href="#">Visit Product</a>
-                  </div>
-                </div>
-              </div>
-
+              <CustomerReviews></CustomerReviews>
               <div className="review-load">
                 <a className="themeBtn" href="#">Load more comments</a>
               </div>
-
             </div>
           </section>
 

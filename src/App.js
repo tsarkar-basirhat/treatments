@@ -11,6 +11,11 @@ import Faq from './pages/Faq';
 import Discounts from './pages/Discounts';
 import Career from './pages/Career';
 import About from './pages/About';
+import ProductView from './pages/ProductView';
+import Partners from './pages/Partners';
+import Policies from './pages/Policies';
+import HowtoOrder from './pages/HowtoOrder';
+import JobView from './pages/JobView';
 
 function App() {
   return (
@@ -28,6 +33,11 @@ function App() {
             <Route path="/discounts" element={<Discounts />} />
             <Route path="/career" element={<Career />} />
             <Route path="/about" element={<About />} />
+            <Route path="/product-view" element={<ProductView />} />
+            <Route path="/partners" element={<Partners />} />
+            <Route path="/policies" element={<Policies />} />
+            <Route path="/how-to-order" element={<HowtoOrder />} />
+            <Route path="/job-view" element={<JobView />} />
         </Routes>
       </Router>
     </div>
