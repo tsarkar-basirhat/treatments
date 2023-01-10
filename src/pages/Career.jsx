@@ -5,6 +5,7 @@ import Header from "../common/Header";
 import Footer from "../common/Footer";
 
 import { ImStarEmpty, ImStarHalf, ImStarFull } from "react-icons/im";
+import { Link, NavLink } from "react-router-dom";
 
 function Career() {
 
@@ -41,7 +42,7 @@ function Career() {
                                     <span><ImStarFull/></span>
                                     <span>4.5/5</span>
                                 </div>
-                                <a className="themeBtn" href="#">View job</a>
+                                <NavLink to="/job-view" className="themeBtn">View job</NavLink>
                               </div>
                             </div>
                           </div>
@@ -63,7 +64,7 @@ function Career() {
                                     <span><ImStarFull/></span>
                                     <span>4.5/5</span>
                                 </div>
-                                <a className="themeBtn" href="#">View job</a>
+                                <NavLink to="/job-view" className="themeBtn">View job</NavLink>
                               </div>
                             </div>
                           </div>
@@ -85,7 +86,7 @@ function Career() {
                                     <span><ImStarFull/></span>
                                     <span>4.5/5</span>
                                 </div>
-                                <a className="themeBtn" href="#">View job</a>
+                                <NavLink to="/job-view" className="themeBtn">View job</NavLink>
                               </div>
                             </div>
                           </div>

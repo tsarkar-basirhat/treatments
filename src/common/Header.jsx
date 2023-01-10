@@ -32,13 +32,13 @@ function Header() {
                       </div>
                       <div className="header-contact">
                         <div className="header-email">
-                            <a href="mailto:support@aztreatments.com">support@aztreatments.com <span><MdEmail/></span> </a>
+                            <a href="mailto:support@aztreatments.com">support@aztreatments.com <span><img src={require('../images/icons/email.png')} /></span> </a>
                         </div>
                         <div className="header-phone">
-                            <a href="">+44 020 7042 1880 <span><GiRotaryPhone/></span> </a>
+                            <a href="">+44 020 7042 1880 <span><img src={require('../images/icons/phone.png')} /></span> </a>
                         </div>
                         <div className="header-cart">
-                            <div className="cartIcon"><BsCart3/></div>
+                            <div className="cartIcon"><img src={require('../images/icons/cart.png')} /></div>
                             <div className="cart-bubble">0</div>
                         </div>
                         <div className={isActive ? 'mobClick open': 'mobClick'} onClick={toggleClass} >

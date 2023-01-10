@@ -2,7 +2,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import '../node_modules/slick-carousel/slick/slick.css';
 import '../src/css/font-awesome.min.css';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollTop from './common/ScrollTop';
 import Home from './pages/Home';
 import Treatment from './pages/Treatment';
 import Product from './pages/Product';
@@ -16,11 +17,14 @@ import Partners from './pages/Partners';
 import Policies from './pages/Policies';
 import HowtoOrder from './pages/HowtoOrder';
 import JobView from './pages/JobView';
+import ShoppingCart from './pages/ShoppingCart';
+import BookingCalendar from './pages/BookingCalendar';
 
 function App() {
   return (
     <div className="App">
       <Router basename="/stefan/treatments/">
+        <ScrollTop/>
         <Routes>
             {/* <Route path='*' element={<NotFound />} /> */}
 
@@ -38,6 +42,9 @@ function App() {
             <Route path="/policies" element={<Policies />} />
             <Route path="/how-to-order" element={<HowtoOrder />} />
             <Route path="/job-view" element={<JobView />} />
+
+            <Route path="/cart" element={<ShoppingCart />} />
+            <Route path="/booking-calendar" element={<BookingCalendar />} />
         </Routes>
       </Router>
     </div>

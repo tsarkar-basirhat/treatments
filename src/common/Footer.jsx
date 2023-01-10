@@ -1,6 +1,6 @@
 import React from "react";
 import { FiChevronRight } from "react-icons/fi"
-import {Link} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
 
@@ -35,12 +35,12 @@ function Footer() {
                                     <div className="footer-nav-single">
                                         <h2>customer care</h2>
                                         <ul>
-                                            <li><a href=""><FiChevronRight/> <span>Contact us</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>How to order</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>FAQ</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>Discounts</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>Terms of service</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>Privacy policy</span></a></li>
+                                            <li><NavLink to="/contact"><FiChevronRight/> <span>Contact us</span></NavLink></li>
+                                            <li><NavLink to="/how-to-order"><FiChevronRight/> <span>How to order</span></NavLink></li>
+                                            <li><NavLink to="/faq"><FiChevronRight/> <span>FAQ</span></NavLink></li>
+                                            <li><NavLink to="/discounts"><FiChevronRight/> <span>Discounts</span></NavLink></li>
+                                            <li><NavLink to="/policies"><FiChevronRight/> <span>Terms of service</span></NavLink></li>
+                                            <li><NavLink to="/policies"><FiChevronRight/> <span>Privacy policy</span></NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -48,9 +48,9 @@ function Footer() {
                                     <div className="footer-nav-single">
                                         <h2>about us</h2>
                                         <ul>
-                                            <li><a href=""><FiChevronRight/> <span>About us</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>Partners</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>Career</span></a></li>
+                                            <li><NavLink to="/about"><FiChevronRight/> <span>About us</span></NavLink></li>
+                                            <li><NavLink to="/partners"><FiChevronRight/> <span>Partners</span></NavLink></li>
+                                            <li><NavLink to="/career"><FiChevronRight/> <span>Career</span></NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -58,10 +58,10 @@ function Footer() {
                                     <div className="footer-nav-single">
                                         <h2>MY ACCOUNT</h2>
                                         <ul>
-                                            <li><a href=""><FiChevronRight/> <span>Track order</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>Change appointment</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>Subscribe for news</span></a></li>
-                                            <li><a href=""><FiChevronRight/> <span>Login</span></a></li>
+                                            <li><NavLink><FiChevronRight/> <span>Track order</span></NavLink></li>
+                                            <li><NavLink><FiChevronRight/> <span>Change appointment</span></NavLink></li>
+                                            <li><NavLink><FiChevronRight/> <span>Subscribe for news</span></NavLink></li>
+                                            <li><NavLink><FiChevronRight/> <span>Login</span></NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
